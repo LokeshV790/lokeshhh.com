@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
+// @ts-ignore
 import { useFormStatus } from "react-dom";
 
 export default function SubmitBtn() {

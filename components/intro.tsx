@@ -19,17 +19,29 @@ export default function Intro() {
       ref={ref}
       id="home"
       className="intro-section-container  mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-      suppressHydrationWarning
     >
-
       <motion.h1
         className="mb-10 mt-4 px-4 text-5xl font-medium !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        suppressHydrationWarning
       >
-        <text className="font-bold text-4xl md:text-8xl sm:text-4xl" suppressHydrationWarning>Lokesh Vazirani</text><br/>
-        <div className="flex-col md:flex-row sm:flex-row"><span className="text-xl md:text-4xl sm:text-2xl text-gray-400" suppressHydrationWarning>Software Developer</ span><span className="text-xl md:text-4xl sm:text-2xl text-gray-400"> & </span><span className="flex-row text-xl md:text-4xl sm:text-2xl text-gray-400"> Data Analyst</span></div>
+        <text className="font-bold text-4xl md:text-8xl sm:text-4xl">
+          Lokesh Vazirani
+        </text>
+        <br />
+        <div className="flex-col md:flex-row sm:flex-row">
+          <span className="text-xl md:text-4xl sm:text-2xl text-gray-400">
+            Software Developer
+          </span>
+          <span className="text-xl md:text-4xl sm:text-2xl text-gray-400">
+            {" "}
+            &{" "}
+          </span>
+          <span className="flex-row text-xl md:text-4xl sm:text-2xl text-gray-400">
+            {" "}
+            Data Analyst
+          </span>
+        </div>
       </motion.h1>
 
       <motion.div
@@ -47,8 +59,6 @@ export default function Intro() {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
-
-          suppressHydrationWarning
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -58,13 +68,12 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-90 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/Lokesh_Vazirani.pdf"
           download
-          suppressHydrationWarning
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        </motion.div>
-        <motion.div
+      </motion.div>
+      <motion.div
         className="flex mt-10 flex-row sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -72,12 +81,10 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/lokesh-vazirani/"
           target="_blank"
-          suppressHydrationWarning
         >
           <BsLinkedin />
         </a>
@@ -86,7 +93,6 @@ export default function Intro() {
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/LokeshV790"
           target="_blank"
-          suppressHydrationWarning
         >
           <FaGithubSquare />
         </a>

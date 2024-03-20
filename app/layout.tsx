@@ -11,7 +11,7 @@ import Particles from "@/components/Particles";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lokesh Vazirani| Personal Portfolio",
+  title: "Lokesh Vazirani | Personal Portfolio",
   description: "",
 };
 
