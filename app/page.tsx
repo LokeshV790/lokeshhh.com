@@ -1,13 +1,21 @@
-import Particles from "@/components/Particles";
-import Image from "next/image";
+import About from "@/components/about";
+import Contact from "@/components/contact";
+import Experience from "@/components/experience";
+import Intro from "@/components/intro";
+import Projects from "@/components/projects";
+import SectionDivider from "@/components/section-divider";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main>
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={150}
-      />
+    <main className="flex flex-col items-center px-4">
+      <Intro />
+      <SectionDivider />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
     </main>
   );
 }
