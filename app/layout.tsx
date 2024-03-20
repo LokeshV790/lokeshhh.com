@@ -34,13 +34,13 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Analytics />
             <Footer />
 
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
-        <Analytics />
       </body>
     </html>
   );
