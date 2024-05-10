@@ -23,8 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7912649199399232"
-     crossorigin="anonymous"></script></head>
+      <head><meta name="google-adsense-account" content="ca-pub-7912649199399232"></head>
       <body
         className={`${inter.className} bg-black text-white relative pt-28 sm:pt-36 dark:bg-black dark:text-white dark:text-opacity-90`}
       >
